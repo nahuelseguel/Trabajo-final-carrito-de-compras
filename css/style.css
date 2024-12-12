@@ -1,0 +1,238 @@
+body{
+    background-image: url("../assets/AAportada.webp");
+    background-size: cover;
+}
+
+.cont{
+    display: grid;
+    height: 80vh;
+    grid-template-columns:  4fr 1fr; 
+    grid-template-rows: 4fr 1fr 2fr ;
+    gap: 5vh;
+}
+
+.hea{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: 5px;
+    text-align: center;  
+}
+
+.aBtnCont {
+    justify-content: center; 
+    align-items: center;
+  }
+  
+  .aBtn {
+    text-decoration: none;
+    padding: 0; 
+    margin: 0; 
+
+}
+
+.titleTienda{
+    margin-top: 5px;
+    color: rgb(199, 85, 8);
+    font-size: 50px;
+    grid-column: 2/3;
+}
+
+section{
+    display: grid;
+    height: 80vh;
+    gap: 10px;
+    padding: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scrollbar-color: rgb(148, 101, 15) transparent;
+    grid-row: 1/3;
+}
+
+.btnCart{
+    border: none; 
+    color: black; 
+    padding: 14px 28px; 
+    cursor: pointer; 
+    border-radius: 20px; 
+    background-color: white; 
+    border: 2px solid #04AA6D;
+}
+
+.btnCart:hover{
+    background-color: rgb(98, 143, 98); color: white;
+    box-shadow: 1px 1px 20px green;
+    justify-self:end;
+}
+
+.btnInit{
+    height: 5vh;
+    width: 150px;
+    border: none; 
+    color: rgb(0, 0, 0); 
+    padding: 14px 28px;
+    margin-top: 40px;
+    border-radius: 5px; 
+    background-color: rgb(235, 234, 232);
+    border-color:  rgb(228, 185, 105);
+}
+
+.btnInit:hover{
+    cursor: pointer; 
+    background-color: rgb(228, 185, 105); 
+    border: 2px solid rgb(235, 234, 232);
+
+}
+
+.btnInfo{
+    height: 5vh;
+    width: 150px;
+    border: none; 
+    color: rgb(0, 0, 0); 
+    padding: 14px 28px; 
+    margin-top: 40px;
+    cursor: pointer; 
+    border-radius: 5px; 
+    background-color: rgb(235, 234, 232);; 
+    border-color: rgb(228, 185, 105);
+}
+
+.btnInfo:hover{
+    cursor: pointer; 
+    background-color: rgb(228, 185, 105); 
+    border: 2px solid rgb(235, 234, 232);
+
+}
+
+.btnFinish{
+    border: none; 
+    color: rgb(0, 0, 0); 
+    height: 5vh;
+    margin-left: 30px;
+    cursor: pointer; 
+    border-radius: 5px; 
+    background-color: white; 
+    border: 2px solid  #04AA6D;
+}
+
+.btnFinish:hover{
+    background-color: rgb(98, 143, 98); 
+    color: white;
+    box-shadow: 1px 1px 20px green;
+    justify-self:end;
+}
+
+aside{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    height: 60vh;
+    gap: 20px;
+    padding: 10px;
+    text-align: center;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scrollbar-color: rgb(148, 101, 15) transparent;
+    border-radius: 30px;
+    box-shadow: 1px 1px 20px rgb(204, 137, 11);
+}
+
+.cartTitle{
+    color: rgb(221, 153, 27);
+    grid-column: 1/3;
+}
+
+.articleCart{
+    backdrop-filter: blur(10px);
+    color: rgb(221, 153, 27);
+    box-shadow: 1px 1px 10px rgb(204, 137, 11);
+}
+
+.totalSpan{
+    color: white;
+    height: 5vh;
+    padding-top: 15px;
+    padding-left: 10px;
+    backdrop-filter: blur(10px);
+    grid-column: 2/3;
+    border-radius: 10px;
+}
+
+.totalNumber{
+    color: green;
+}
+
+.totalNumber:hover{
+    color:rgb(194, 18, 12);
+}
+
+.article{
+    display: grid;
+    border-radius: 30px;
+    padding: 10px;
+    height: 60vh;
+    text-align: center;
+    color: rgb(221, 153, 27);
+    backdrop-filter: blur(10px);
+    grid-template-rows: 1fr auto;
+}
+
+.article:hover{
+    box-shadow: 1px 1px 20px rgb(204, 137, 11);
+    height: 77vh;
+    transition: 0.8s;
+}
+
+img{
+    height: 20vh;
+    width: 60%;
+    transition: 0.5s;
+}
+
+img:hover{
+    transform: scale(1);
+    height: 40vh;
+    width: 100%;
+}
+
+.precio{
+    color: rgb(194, 18, 12);
+}
+
+.description{
+    color:rgb(214, 121, 14);
+}
+
+.presentacion{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.titlePresentacion{
+    font-size: 40px;
+    color: rgb(221, 153, 27);
+    backdrop-filter: blur(20px);
+}
+
+.textPresentacion{
+    font-size: 30px;
+    color: rgb(201, 84, 5);
+    backdrop-filter: blur(20px);
+    text-align: start;
+}
+
+.linkHome{
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(201, 171, 4);
+    backdrop-filter: blur(20px);
+}
+
+.indexFooter{
+    background-color: rgb(221, 153, 27);
+    width: 99%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
